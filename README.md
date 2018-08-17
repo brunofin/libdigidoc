@@ -51,6 +51,35 @@ Contact for assistance by email abi@id.ee or http://www.id.ee
 
         /usr/local/bin/cdigidoc
         
+### Fedora
+
+1. Install dependencies
+
+        sudo dnf install cmake libxml2-devel openssl-devel
+
+2. Fetch the source
+
+        git clone --recursive https://github.com/open-eid/libdigidoc
+        cd libdigidoc
+
+3. Configure
+
+        mkdir build
+        cd build
+        cmake ..
+
+4. Build
+
+        make
+
+5. Install
+
+        sudo make install
+
+6. Execute
+
+        /usr/local/bin/cdigidoc
+   
 ### OSX
 
 1. Install dependencies from [http://www.cmake.org](http://www.cmake.org)
